@@ -59,6 +59,3 @@ curl http://localhost:8080/api/videos
 ## Como contribuir / screenshots / README para GitHub
 - Tire screenshots do UI em `http://localhost:8080` e adicione em `docs/screenshots/`.
 - Atualize este README com imagens reais (ex.: `docs/screenshots/upload.png`).
-
----
-Feito para servir como ponto de partida educativo. Para qualquer ajuste ou querer que eu adicione autenticação, transcodificação (FFmpeg), HLS, ou uma interface React separada, me diga que eu eu já adiciono os passos e o código.
