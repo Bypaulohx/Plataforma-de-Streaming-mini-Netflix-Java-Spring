@@ -1,7 +1,3 @@
-# Mini Netflix (Java + Spring) - Projeto completo
-
-**Descrição:** Projeto minimal de plataforma de streaming (mini-Netflix) com upload, catálogo e player integrado. Backend em Spring Boot e frontend estático simples (HTML + JS) servido pelo Spring.
-
 ## Funcionalidades
 - Upload de vídeos (multipart/form-data).
 - Armazenamento no sistema de arquivos (pasta `uploads` por padrão).
@@ -50,19 +46,3 @@ curl http://localhost:8080/api/videos
 - **Service**: lógica de armazenamento (filesystem) e manipulação de metadados.
 - **Repository**: JPA + H2 em memória (facilita rodar sem banco externo).
 - **Frontend**: arquivos estáticos em `src/main/resources/static` (index.html + app.js + styles.css).
-
-## Observações e ajustes para produção
-- Atualmente os arquivos ficam em `uploads` no diretório onde a aplicação roda. Para produção:
-  - Use armazenamento em S3 ou NAS.
-  - Proteja endpoints com autenticação/authorization.
-  - Use banco de dados persistente (Postgres, MySQL).
-  - Adicionar limites, validações de formato e antivírus na pipeline de upload.
-  - Gerar thumbnails e transcodificação (ex: com FFmpeg) para streaming adaptativo (HLS/DASH).
-  - CDN para entrega eficiente de vídeo.
-
-## Como contribuir / screenshots / README para GitHub
-- Tire screenshots do UI em `http://localhost:8080` e adicione em `docs/screenshots/`.
-- Atualize este README com imagens reais (ex.: `docs/screenshots/upload.png`).
-
----
-Feito para servir como ponto de partida educativo. Para qualquer ajuste ou querer que eu adicione autenticação, transcodificação (FFmpeg), HLS, ou uma interface React separada, me diga que eu eu já adiciono os passos e o código.
