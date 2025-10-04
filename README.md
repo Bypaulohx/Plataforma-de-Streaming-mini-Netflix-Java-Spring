@@ -1,7 +1,3 @@
-# Mini Netflix (Java + Spring) - Projeto completo
-
-**Descrição:** Projeto minimal de plataforma de streaming (mini-Netflix) com upload, catálogo e player integrado. Backend em Spring Boot e frontend estático simples (HTML + JS) servido pelo Spring.
-
 ## Funcionalidades
 - Upload de vídeos (multipart/form-data).
 - Armazenamento no sistema de arquivos (pasta `uploads` por padrão).
